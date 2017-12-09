@@ -15,6 +15,13 @@ public class APIModule {
 
     private Object result;
 
+    public APIModule(String URI, RequestMethod requestMethod, Object[] requestParameters, Object result) {
+        this.URI = URI;
+        this.requestMethod = requestMethod;
+        this.requestParameters = requestParameters;
+        this.result = result;
+    }
+
     public String getURI() {
         return URI;
     }

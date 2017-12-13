@@ -13,11 +13,11 @@ import java.lang.reflect.Parameter;
 
 public class AnnotationParsing {
 
-    public boolean unEnableScanning(Method method){
+    public static boolean unEnableScanning(Method method){
         return method.isAnnotationPresent(UnEnableScanning.class);
     }
 
-    public String[] parameterValue(Method method){
+    public static String[] parameterValue(Method method){
         Parameter[] parameters = method.getParameters();
 
         String [] parameterValues = new String[parameters.length];
@@ -30,4 +30,5 @@ public class AnnotationParsing {
         }
         return parameterValues;
     }
+
 }

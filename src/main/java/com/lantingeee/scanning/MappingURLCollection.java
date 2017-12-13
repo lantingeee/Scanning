@@ -66,13 +66,13 @@ class MappingURLCollection {
     private Object[] getParameterValues(HandlerMethod handlerMethod) {
         MethodParameter[] parameters = handlerMethod.getMethodParameters();
         Class<?>[] parameterTypes = getParameterTypes(parameters);
+        String[] parameterValueStrings = AnnotationParsing.parameterValue(handlerMethod.getMethod());
 
-        String[] parameterValueStrings = new String[parameterTypes.length];
         Object[] parameterValues = new Object[parameterTypes.length];
         for (int i = 0; i < parameterTypes.length; i++) {
             parameterValues[i] = JSON.parseObject(parameterValueStrings[i], parameterTypes[i]);
         }
-        return parameters;
+        return parameterValues;
     }
 
     List<APIModule> getAllMethodStatus() {
@@ -89,7 +89,7 @@ class MappingURLCollection {
                     HandlerMethod handlerMethod = requestMappingInfoHandlerMethodEntry.getValue();
                     Method method = handlerMethod.getMethod();
 
-                    if (annotationParsing.unEnableScanning(method))
+                    if (AnnotationParsing.unEnableScanning(method))
                         continue;
 
                     Object result = null;

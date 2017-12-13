@@ -5,5 +5,5 @@ package com.lantingeee.scanning;
  */
 public interface Scanning {
 
-    public void active();
+    void active();
 }

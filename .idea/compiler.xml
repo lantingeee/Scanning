@@ -6,11 +6,16 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Scanning" />
+        <module name="scanning-core" />
+        <module name="scanning-spring-boot-start" />
+        <module name="scanningcore" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="Scanning" target="1.8" />
+      <module name="Scanning" target="1.5" />
+      <module name="scanning-core" target="1.5" />
+      <module name="scanning-spring-boot-start" target="1.5" />
+      <module name="scanningcore" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>

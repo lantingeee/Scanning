@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Scanning.iml" filepath="$PROJECT_DIR$/Scanning.iml" />
+      <module fileurl="file://$PROJECT_DIR$/scanning-core/scanning-core.iml" filepath="$PROJECT_DIR$/scanning-core/scanning-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/scanning-spring-boot-start/scanning-spring-boot-start.iml" filepath="$PROJECT_DIR$/scanning-spring-boot-start/scanning-spring-boot-start.iml" />
     </modules>
   </component>
 </project>

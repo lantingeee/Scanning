@@ -43,7 +43,7 @@ class MappingURLCollection {
 
 
     List<APIModule> getAllMethodStatus() {
-        List<APIModule> apiModules = new ArrayList<>();
+        List<APIModule> apiModules = new ArrayList<APIModule>();
 
         for (HandlerMapping handlerMapping : handlerMappings) {
 

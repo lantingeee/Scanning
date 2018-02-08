@@ -17,4 +17,26 @@
         <java.version>1.8</java.version>
     </properties>
 
+    <dependencies>
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-web</artifactId>
+        <version>1.5.9.RELEASE</version>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/org.springframework.plugin/spring-plugin -->
+    <dependency>
+        <groupId>org.springframework.plugin</groupId>
+        <artifactId>spring-plugin</artifactId>
+        <version>1.2.0.RELEASE</version>
+        <type>pom</type>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/org.springframework.plugin/spring-plugin-metadata -->
+    <dependency>
+        <groupId>org.springframework.plugin</groupId>
+        <artifactId>spring-plugin-metadata</artifactId>
+        <version>1.2.0.RELEASE</version>
+    </dependency>
+    </dependencies>
+
 </project>
